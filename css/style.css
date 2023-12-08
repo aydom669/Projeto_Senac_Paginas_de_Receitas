@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Mono&display=swap");
+* {
+  font-family: "Poppins" sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  list-style: none; }
+
+section {
+  padding: 5rem 3%;
+  top: 0; }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; }
+  html::-webkit-scrollbar {
+    width: 1rem; }
+  html::-webkit-scrollbar-track {
+    background: #d7ccc8; }
+
+body {
+  background: #3d2523; }
+
+.titulo {
+  font-family: 'poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  color: #f3f3f3;
+  font-weight: bold; }
+
+.header {
+  padding: 2rem;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  background: #fff;
+  display: flex;
+  position: fixed;
+  color: #000000; }
+  .header .header__logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #10221b;
+    margin-right: auto;
+    color: #000000; }
+    .header .header__logo i {
+      color: #d7ccc8; }
+  .header .nav #nav-close {
+    font-size: 5rem;
+    color: #000000;
+    display: none;
+    cursor: pointer; }
+  .header .nav a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 1.5rem; }
+    .header .nav a:hover {
+      color: #795548;
+      transition: 0.5s; }
+  .header .icons a,
+  .header .icons div {
+    font-size: 2.5rem;
+    margin-right: 1.2rem; }
+    .header .icons a:hover,
+    .header .icons div:hover {
+      color: #e98aec;
+      transition: 0.5s; }
+  .header #menu-btn {
+    display: none; }
+  .header.active {
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem #1a1919; }
+
+/* Header End
+============================================= */
+.receita__section {
+  line-height: 2;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  top: 20rem;
+  margin-bottom: 2rem; }
+  .receita__section .slide {
+    padding: 2rem;
+    text-align: center;
+    background: #eee; }
+    .receita__section .slide img {
+      width: 100%;
+      height: 32rem;
+      border-radius: .7rem;
+      object-fit: cover; }
+    .receita__section .slide h3 {
+      font-size: 2rem;
+      color: #10221b; }
+    .receita__section .slide p {
+      font-size: 1.2rem;
+      padding: 1rem 0;
+      line-height: 2;
+      color: #10221b; }
+    .receita__section .slide:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+      transition: 0.3s linear;
+      cursor: pointer; }
+  .receita__section .swiper-slide {
+    background: #fff; }
+    .receita__section .swiper-slide p {
+      font-size: 1.5rem;
+      padding-bottom: 1rem; }
+  .receita__section h3 {
+    font-size: 2rem; }
+  .receita__section span {
+    font-size: 2rem;
+    font-weight: 900; }
+  .receita__section .spanInfo {
+    font-size: 1.5rem; }
+  .receita__section ol {
+    font-size: 1.5rem; }
+  .receita__section ul {
+    font-size: 1.5rem; }
+
+/* Pacotes / end
+  ============================================ */
+@media (max-width: 971px) {
+  .header .nav a {
+    font-size: 1.5rem; }
+  .header .icons a,
+  .header .icons div {
+    font-size: 2.2rem; }
+
+  .home .box {
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+    background-position: right !important; }
+    .home .box.second {
+      padding: 2rem;
+      justify-content: center;
+      text-align: center;
+      background-position: left !important; }
+    .home .box .content span {
+      font-size: 3rem; }
+    .home .box .content h3 {
+      font-size: 4rem; }
+    .home .box .content p {
+      font-size: 1.3rem; } }
+@media (max-width: 707px) {
+  .header .nav {
+    width: 35rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    left: -110%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    background: #fff; }
+    .header .nav.active {
+      box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 0px 100vw;
+      left: 0px; }
+    .header .nav a {
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    .header .nav #nav-close {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1rem; }
+  .header #menu-btn {
+    display: inline-block;
+    color: #10221b; }
+    .header #menu-btn:hover {
+      color: #219150;
+      transition: 0.5s; }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none; } }
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+  height: 25rem;
+  border-radius: 0.5rem; }
+  figure img {
+    width: 90%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-top: 2rem; }
+
+/*# sourceMappingURL=style.css.map */
