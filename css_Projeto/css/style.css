@@ -165,6 +165,12 @@ main .receita__section {
           .footer .conteiner .box a:hover i {
             padding-right: 2rem; }
 
+.salgadoFooter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../imgs__Projeto/img__SalgadasReceitas/img_Salgados/Esfiha de Queijo.jpg"); }
+
+.massaFooter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../imgs__Projeto/img_massas/lasanha/bolonhesa.jpg"); }
+
 /* Pacotes / end
   ============================================ */
 @media (max-width: 971px) {
